@@ -1,0 +1,66 @@
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin: 2px 0px;
+}
+
+#submitButton {
+    margin: 4px 0px;
+}
+
+body {
+    margin-left: 50px;
+}
+
+.message {
+   padding: 2px;
+   width: 50%;    
+}
+
+.message > * {  
+   display: inline-block;
+}
+
+.message .title {
+    font-weight: 700;
+    font-size: 1.1em;     
+}
+
+.success.message {
+    border: 1px solid #5c9a18;
+    background: #e4ffe4;
+    color: #2a8e2a;
+}
+
+.error.message {
+    background: #f9cece;
+    border: 1px solid #7d2929;
+}
+
+.error.message .title {
+    color: #863030;
+}
+
+button.clear {
+    background: -moz-linear-gradient(top, #dd6e39, #d17636);
+    background: -ms-linear-gradient(top, #dd6e39, #d17636);
+    background: -o-linear-gradient(top, #dd6e39, #d17636);
+    background: -webkit-linear-gradient(top, #dd6e39, #d17636);
+    background: linear-gradient(top, #dd6e39, #d17636);
+    border: 1px solid transparent;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, .1);
+}
+
+button.clear:hover {
+    background: -moz-linear-gradient(top, #ca602e, #bd6527);
+    background: -ms-linear-gradient(top, #ca602e, #bd6527);
+    background: -o-linear-gradient(top, #ca602e, #bd6527);
+    background: -webkit-linear-gradient(top, #ca602e, #bd6527);
+    background: linear-gradient(top, #ca602e, #bd6527);
+    border: 1px solid transparent;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, .1);
+}

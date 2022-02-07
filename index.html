@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <link href="https://ssl.gstatic.com/docs/script/css/add-ons1.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mainForm">
+        <h1>Request Appointment</h1>
+        <form>
+            <div>
+                <div class="inline form-group">
+                    <label for="name">Name</label>
+                    <input id="nameInput" style="width: 360px;" type="text">
+                </div>
+            </div>
+            <div>
+                <div class="inline form-group">
+                    <label for="email">Email</label>
+                    <input id="emailInput" style="width: 360px;" type="text">
+                </div>
+            </div>
+            <div>
+                <div class="inline form-group">
+                    <label for="address">Address</label>
+                    <input id="addressInput" style="width: 360px;" type="text">
+                </div>
+            </div>
+            <div>
+                <div class="inline form-group">
+                    <label for="city">City</label>
+                    <input id="cityInput" style="width: 192px;" type="text">
+                </div>
+                <div class="inline form-group">
+                    <label for="stateSelect">State</label>
+                    <select id="stateSelect" style="width: 35px;" type="text">
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AR">AR</option>
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                    </select>
+                </div>
+                <div class="inline form-group">
+                    <label for="zip-code">Zip code</label>
+                    <input id="zip-codeInput" style="width: 65px;" type="number">
+                </div>
+            </div>
+            <div>
+                <div class="block form-group">
+                    <ol>
+                        <li>Select month.</li>
+                        <li>Allow availble days to populate.</li>
+                        <li>Select day.</li>
+                        <li>Allow available times to populate.</li>
+                        <li>Select time.</li>
+                        <li>Submit request.</li>
+                    </ol>
+                </div>
+                <div class="inline form-group">
+                    <label for="monthSelect">Select Month</label>
+                    <select id="monthSelect">
+                        <option value=""></option>
+                        <option value="0">JAN</option>
+                        <option value="1">FEB</option>
+                        <option value="2">MAR</option>
+                        <option value="3">APR</option>
+                        <option value="4">MAY</option>
+                        <option value="5">JUN</option>
+                        <option value="6">JUL</option>
+                        <option value="7">AUG</option>
+                        <option value="8">SEP</option>
+                        <option value="9">OCT</option>
+                        <option value="10">NOV</option>
+                        <option value="11">DEC</option>
+                    </select>
+                </div>
+                <div class="inline form-group">
+                    <label for="daySelect">Select Day</label>
+                    <select id="daySelect">
+                        <option value="">
+                        </option>
+                    </select>
+                </div>
+                <div class="inline form-group">
+                    <label for="timeSelect">Select Time</label>
+                    <select id="timeSelect">
+                        <option value="">
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <button class="action" id="submitButton" type="button">Submit</button>
+            <button class="clear" id="clearFormButton" type="button">Clear Form</button>
+        </form>
+        <div class="hidden error message">
+            <div class="title">Error:</div>
+            <div class="message"></div>
+        </div>
+        <div class="hidden success message">
+            <div class="title">Message:</div>
+            <div class="message">Sucessfully submitted</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
